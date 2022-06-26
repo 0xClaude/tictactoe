@@ -1,0 +1,43 @@
+html {
+    text-align: center;
+}
+
+.game {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25%;
+}
+
+.tile {
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    height: 25vh;
+    justify-content: center;
+    border: solid 1px black;
+    font-size: 7rem;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+span.unassigned[id|="tile"] {
+    background-color: aqua;
+}
+
+span.unassigned[id|="tile"]:hover {
+    background-color: cornflowerblue;
+}
+
+span.X[id|="tile"] {
+    background-color: coral;
+}
+
+span.O[id|="tile"] {
+    background-color: darkseagreen;
+}
+
+span.over[id|="tile"] {
+    background-color: darkgray;
+}
